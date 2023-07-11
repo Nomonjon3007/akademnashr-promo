@@ -29,10 +29,13 @@ body {
 .logo-link:active {
   transition: 0.6;
 }
+.logo-link img {
+  display: block;
+}
  
 .site-header-ections {
   display: flex;
-  border-radius: 12px;
+  margin: 32px;
   align-items: center;
   justify-content: space-between;
 }
@@ -40,9 +43,17 @@ body {
 .sitenav-list {
   display: flex;
   padding: 0%;
+  margin: 0;
+  margin-right: 32px;
  justify-content: space-between;
  list-style: none;
- 
+}
+
+.sitenav-item {
+  margin-right: 32px;
+}
+.sitenav-item:last-child {
+  margin-right: 0;
 }
 
 
@@ -103,6 +114,8 @@ body {
   justify-content: space-between;
   border-radius: 12px;
   align-items: center;
+  /* padding: 80px; */
+  /* padding-right: 0; */
   padding-top: 80px;
   padding-bottom: 80px;
  
@@ -112,7 +125,7 @@ body {
 .hero-content{
   width: 390px;
  padding-left: 170px;
- padding-right: 883px;
+ /* padding-right: 883px; */
 }
 
 
@@ -120,15 +133,27 @@ body {
   width: 80px;
   height: 3px;
   border: none;
+  margin: 0;
+  margin-bottom: 40px;
   background-color: #ff7500;
 }
 
 .hero-heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  width: 390px;
+  height: 96px;
   font-size: 40px;
   line-height: 1.2;
   letter-spacing: 0.5px;
   font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
 }
+
+.hero-text {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
 
 .hero-img {
   width: 510px;
@@ -150,6 +175,8 @@ body {
 }
 
 .feature-heading {
+  margin-top: 0;
+  margin-bottom: 72px;
   width: 440px;
   font-size: 72px;
   line-height: 1.2;
@@ -158,14 +185,20 @@ body {
 }
 
 .features-list {
+  margin: 0;
   display: flex;
-  justify-content: space-between;
+  
   padding: 0;
   list-style: none;
 }
 
 .feature {
   width: 340px;
+  margin-right: 40px;
+}
+
+.feature:last-child {
+  margin-right: 0;
 }
 
 .feature-icon-wrapper {
@@ -199,14 +232,31 @@ body {
   width: 400px;
 }
 .promo-heading {
+  margin-top: 0;
+  margin-bottom: 24px;
   font-size: 40px;
   line-height: 48px;
   font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
 }
+
+.rpomo-info-wrapper {
+  margin-bottom: 24px;
+}
+
+.promo-text {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
 .promo-text {
   font-size: 16px;
   line-height: 1.5;
 }
+
+.promo-text:last-child {
+  margin-bottom: 0;
+}
+
 .promo-highlight {
   color: #ff7500;
 }
@@ -226,16 +276,23 @@ body {
   justify-content: space-between;
   align-items: center;
 } 
-.logo-link {
-
-}
 .site-footer-socials {
   display: flex;
   align-items: center;
+  margin: 0;
   padding: 0;
-  
 }
+
+.site-footer-socials li {
+  margin-right: 16px;
+}
+
+.site-footer-socials:last-child {
+  margin-right: 0;
+}
+
 .site-footer-socials a {
+  display: block;
   color:#252420;
 }
 .site-footer-socials a:hover {
@@ -243,6 +300,9 @@ body {
 }
 .site-footer-socials a:active {
  opacity: 0.6;
+}
+.site-footer-socials svg {
+  display: block;
 }
 .site-footer ul {
   list-style: none;
@@ -252,14 +312,25 @@ body {
   height: 2px;
   background-color: rgba(37, 36, 32, 0.5);;
   border: 0;
+  margin-top: 40px;
+  margin-bottom: 64px;
 }
 .site-footer-bottom {
   display: flex;
 }
 .site-footer-links {
   width: 224px;
+  padding: 0;
+  margin: 0;
+  margin-right: 68px;
+  list-style: none;
   line-height: 19px;
 }
+
+.site-footer-links:last-child {
+  margin-right: 0;
+}
+
 .site-footer-links a {
   text-decoration: none;
   color: #252420;
